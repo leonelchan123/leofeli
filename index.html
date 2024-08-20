@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Yanet💕</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ffcccc;
+    }
+
+    #btnSi {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #btnNo {
+      background-color: #f44336;
+      color: white;
+    }
+
+    #btnNo:hover {
+      background-color: #ff6666;
+    }
+
+    h3, h6 {
+      margin: 10px;
+    }
+
+    img {
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+  </style>
+  <script>
+    function accionParaCuandoEllaDigaQueSi() {
+      alert('Desde hoy, 13 de abril, cada día será un capítulo especial en nuestra historia de amor❤️');
+    }
+
+    function mueveElBoton() {
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var newWidth = Math.random() * width;
+      var newHeight = Math.random() * height;
+
+      document.getElementById('btnNo').style.position = "absolute";
+      document.getElementById('btnNo').style.left = newWidth + "px";
+      document.getElementById('btnNo').style.top = newHeight + "px";
+    }
+  </script>
+</head>
+
+<body>
+  <h3>Yanet, ¿Puedo ser tu novio?</h3>
+  <h6>¿Puedo compartir mi vida a tu lado? Eres todo lo que necesito</h6>
+  <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" class="button" value="ACEPTO" />
+  <input type="button" id="btnNo" onmouseover="mueveElBoton()" class="button" value="NO" />
+  <br>
+  <img src="yanetmiamor.png" width="200">
+</body>
+
+</html>
